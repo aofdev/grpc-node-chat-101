@@ -1,0 +1,12 @@
+{
+  "name": "chat-grpc",
+  "version": "1.0.0",
+  "description": "grpc node chat 101",
+  "keywords": [],
+  "author": "aof.dev@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "@grpc/proto-loader": "^0.3.0",
+    "grpc": "^1.15.1"
+  }
+}
