@@ -40,7 +40,6 @@ function startChat() {
 }
 
 function onData(message) {
-  console.log(message)
   if (message.user == username) {
     return
   }
