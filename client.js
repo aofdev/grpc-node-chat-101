@@ -23,19 +23,18 @@ const REMOTE_SERVER = "0.0.0.0:5001"
  
 let username
  
-//Create gRPC client
 let client = new proto.CH.Chat(
   REMOTE_SERVER,
   grpc.credentials.createInsecure()
 )
  
 function startChat() {
-  let channel = client.join({ user: username })
+  let channel = client.Join({ user: username })
  
   channel.on("data", onData)
  
   rl.on("line", (text) => {
-    client.send({ user: username, text: text }, res => {})
+    client.Send({ user: username, text: text }, res => {})
   })
 }
 
